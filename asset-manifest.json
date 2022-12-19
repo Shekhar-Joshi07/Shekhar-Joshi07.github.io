@@ -1,27 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.05c26ee8.chunk.css",
-    "main.js": "/static/js/main.b6732879.chunk.js",
-    "main.js.map": "/static/js/main.b6732879.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.6b3488d1.js",
-    "runtime-main.js.map": "/static/js/runtime-main.6b3488d1.js.map",
-    "static/css/2.451bf2e4.chunk.css": "/static/css/2.451bf2e4.chunk.css",
-    "static/js/2.6d107c3b.chunk.js": "/static/js/2.6d107c3b.chunk.js",
-    "static/js/2.6d107c3b.chunk.js.map": "/static/js/2.6d107c3b.chunk.js.map",
+    "main.css": "/static/css/main.89278942.css",
+    "main.js": "/static/js/main.a202e111.js",
+    "static/media/medicine_store.png": "/static/media/medicine_store.f877363104f16d45a4f9.png",
+    "static/media/the_hindu.png": "/static/media/the_hindu.6ac4737e4570e16f626c.png",
+    "static/media/s3.PNG": "/static/media/s3.0ff230fc8564f95bea73.PNG",
+    "static/media/Chandra_Shekhar Joshi_Resume.pdf": "/static/media/Chandra_Shekhar Joshi_Resume.31815dddcf7b3946b440.pdf",
+    "static/media/servista.PNG": "/static/media/servista.eca26910422af8212253.PNG",
+    "static/media/Resume.jpeg (1).png": "/static/media/Resume.jpeg (1).4e5c5753466eb443c438.png",
+    "static/media/url.jpg": "/static/media/url.0708cbd5cf568f77d9f7.jpg",
+    "static/media/advice.jpg": "/static/media/advice.10a460b7858f4755b667.jpg",
     "index.html": "/index.html",
-    "precache-manifest.19edabd9c9e3e7ae9e4b8dba99bc9d61.js": "/precache-manifest.19edabd9c9e3e7ae9e4b8dba99bc9d61.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/2.451bf2e4.chunk.css.map": "/static/css/2.451bf2e4.chunk.css.map",
-    "static/css/main.05c26ee8.chunk.css.map": "/static/css/main.05c26ee8.chunk.css.map",
-    "static/js/2.6d107c3b.chunk.js.LICENSE.txt": "/static/js/2.6d107c3b.chunk.js.LICENSE.txt",
-    "static/media/dev.svg": "/static/media/dev.20e45d9a.svg",
-    "static/media/shake.svg": "/static/media/shake.e324d300.svg"
+    "static/media/logo.svg": "/static/media/logo.537add793a58478a552ac7fc1079a824.svg",
+    "main.89278942.css.map": "/static/css/main.89278942.css.map",
+    "main.a202e111.js.map": "/static/js/main.a202e111.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.6b3488d1.js",
-    "static/css/2.451bf2e4.chunk.css",
-    "static/js/2.6d107c3b.chunk.js",
-    "static/css/main.05c26ee8.chunk.css",
-    "static/js/main.b6732879.chunk.js"
+    "static/css/main.89278942.css",
+    "static/js/main.a202e111.js"
   ]
 }
