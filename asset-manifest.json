@@ -1,19 +1,23 @@
 {
   "files": {
     "main.css": "/static/css/main.8631cd4b.css",
-    "main.js": "/static/js/main.6d79822a.js",
+    "main.js": "/static/js/main.bf0a0a32.js",
     "static/media/shopease.png": "/static/media/shopease.cc0ebcb37824c24eb36d.png",
     "static/media/medicine.png": "/static/media/medicine.e8f1beb459bc2e72902d.png",
+    "static/media/Thinkmania.png": "/static/media/Thinkmania.9fb07facd67d8f727325.png",
+    "static/media/weatherapp.png": "/static/media/weatherapp.f07611549d2cc082603b.png",
     "static/media/Hindu.png": "/static/media/Hindu.4a8c85377172242e87a9.png",
+    "static/media/FLopkart.png": "/static/media/FLopkart.8f01d68e37542710efb9.png",
+    "static/media/takeatrip.png": "/static/media/takeatrip.4b93669b6fbe13751a50.png",
     "static/media/youtube.png": "/static/media/youtube.d98c4f2791c2e755f9ca.png",
     "static/media/Chandra-Shekhar-Joshi-Resume.pdf": "/static/media/Chandra-Shekhar-Joshi-Resume.31815dddcf7b3946b440.pdf",
     "static/media/Resume.jpeg (1).png": "/static/media/Resume.jpeg (1).4e5c5753466eb443c438.png",
     "index.html": "/index.html",
     "main.8631cd4b.css.map": "/static/css/main.8631cd4b.css.map",
-    "main.6d79822a.js.map": "/static/js/main.6d79822a.js.map"
+    "main.bf0a0a32.js.map": "/static/js/main.bf0a0a32.js.map"
   },
   "entrypoints": [
     "static/css/main.8631cd4b.css",
-    "static/js/main.6d79822a.js"
+    "static/js/main.bf0a0a32.js"
   ]
 }
