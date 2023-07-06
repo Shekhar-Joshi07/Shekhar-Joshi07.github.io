@@ -1,0 +1,63 @@
+/* #forCursor{
+    cursor:  pointer !important;
+} */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+  font-family: 'Poppins' !important;
+  box-sizing: border-box;
+}
+
+
+
+.html{
+    box-shadow: rgb(227, 77, 38) 0px 5px 15px;
+  }
+  .css{
+    box-shadow: rgb(2, 119, 188) 0px 5px 15px;
+  }
+  .js{
+    box-shadow: rgb(254, 213, 0) 0px 5px 15px;
+  }
+  .ts{
+    box-shadow: rgb(0, 122, 203) 0px 5px 15px;
+  }
+  .react{
+    box-shadow: rgb(0, 215, 254) 0px 5px 15px;
+  }
+  .redux{
+    box-shadow: rgb(118, 74, 187) 0px 5px 15px;
+  }
+  .mui{
+    box-shadow: rgb(41, 181, 245) 0px 5px 15px;
+  }
+  .chakra{
+    box-shadow: rgb(77, 181, 171) 0px 5px 15px;
+  }
+  .mongo{
+    box-shadow: rgb(73, 156, 74) 0px 5px 15px;
+  }
+  .node{
+    box-shadow: rgb(139, 199, 75) 0px 5px 15px;
+  }
+  .ex{
+    box-shadow: rgb(129, 129, 129) 0px 5px 15px;
+  }
+  .cy{
+    box-shadow: rgb(255, 255, 255) 0px 5px 15px;
+  }
+  .npm{
+    box-shadow: rgb(192, 33, 39) 0px 5px 15px;
+  }
+  .git{
+    box-shadow: rgb(255, 255, 255) 0px 5px 15px;
+  }
+
+  .vs{
+    box-shadow: rgb(31, 155, 239) 0px 5px 15px;
+  }
+
+  .mongoose{
+    box-shadow: rgb(179,27,27) 0px 5px 15px;
+
+  }

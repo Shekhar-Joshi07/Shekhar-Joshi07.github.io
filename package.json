@@ -1,0 +1,53 @@
+{
+  "homepage": "https://shekhar-joshi07.github.io",
+  "name": "my-portfolio",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@chakra-ui/icons": "^2.0.15",
+    "@chakra-ui/react": "^2.4.6",
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "aos": "^2.3.4",
+    "framer-motion": "^8.1.5",
+    "gsap": "^3.11.5",
+    "lottie-react": "^2.3.1",
+    "prop-types": "15.7.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-github-calendar": "^3.4.0",
+    "react-icons": "4.3.1",
+    "react-scripts": "5.0.1",
+    "react-scroll": "^1.8.9",
+    "react-tsparticles": "^2.9.3",
+    "react-vertical-timeline-component": "3.5.2",
+    "tsparticles": "^2.9.3",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
