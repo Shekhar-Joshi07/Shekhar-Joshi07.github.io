@@ -41,13 +41,13 @@ const Contact = () => {
    <> 
    
 
-    <Container bg="#22252c" maxW="full" mt={0} centerContent overflow="hidden " id="Contact" zIndex={1} pos={"relative"}>
+    <Container  bg="#0C090A" maxW="full" mt={0} centerContent overflow="hidden " id="Contact" zIndex={1} pos={"relative"}>
          <Text textAlign="center" fontSize="4xl" fontWeight="bold" mb={1} color="#0bf0c1">
         Contact Me
         </Text>
       <Flex>
         <Box
-          bg="#22252c"
+          bg="#0C090A"
           color="white"
           border="1px solid #0bf0c1"
           borderRadius="xl"

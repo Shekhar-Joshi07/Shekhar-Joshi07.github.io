@@ -21,7 +21,7 @@ const Hero = () => {
 
     gsap.to(".hero-container", { 
       duration: 2,
-      backgroundImage:"linear-gradient(#18C88B, #9198e5)",
+      // backgroundImage:"linear-gradient(#18C88B, #9198e5)",
     });
     
 
@@ -140,7 +140,7 @@ const Hero = () => {
             <br />
             <Text
               as="em"
-              color={"#22252c"}
+              color= "#0bf0c1"
               fontSize={{ base: "2xl", sm: "2xl", lg: "3xl" }}
               className="hero-text"
             >

@@ -25,6 +25,9 @@ body {
   .react{
     box-shadow: rgb(0, 215, 254) 0px 5px 15px;
   }
+  .ionic{
+    box-shadow: rgb(0, 215, 254) 0px 5px 15px;
+  }
   .redux{
     box-shadow: rgb(118, 74, 187) 0px 5px 15px;
   }
@@ -49,7 +52,7 @@ body {
   .npm{
     box-shadow: rgb(192, 33, 39) 0px 5px 15px;
   }
-  .git{
+  .github{
     box-shadow: rgb(255, 255, 255) 0px 5px 15px;
   }
 
@@ -57,7 +60,11 @@ body {
     box-shadow: rgb(31, 155, 239) 0px 5px 15px;
   }
 
-  .mongoose{
-    box-shadow: rgb(179,27,27) 0px 5px 15px;
+  .git{
+    box-shadow: rgb(243,79,41) 0px 5px 15px;
 
+  }
+
+  .postman{
+    box-shadow: rgb(227, 77, 38) 0px 5px 15px;
   }

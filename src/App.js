@@ -4,6 +4,7 @@ import "./index.css";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
+import Experience from "./components/Experience"
 import SkillsSection from "./components/SkillsSection";
 import ProjectSection from "./components/ProjectSection";
 import Stats from "./components/Stats";
@@ -34,7 +35,7 @@ const App = () => {
       <Navbar />
       <Hero  />
       <About />
-
+      <Experience/>
       <SkillsSection />
 
       <ProjectSection />

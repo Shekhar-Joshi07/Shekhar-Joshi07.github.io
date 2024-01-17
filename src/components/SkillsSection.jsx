@@ -1,7 +1,7 @@
 import { Box, Text, Image, useColorModeValue } from "@chakra-ui/react";
 
 function SkillsSection() {
-  const bg = useColorModeValue("#22252c");
+  const bg = useColorModeValue("#0C090A");
   const color = useColorModeValue("white");
 
   return (
@@ -174,6 +174,7 @@ function SkillsSection() {
             React Js
           </Text>
         </Box>
+      
         <Box
           zIndex={1}
           position="relative"
@@ -206,6 +207,38 @@ function SkillsSection() {
             color={color}
           >
             Redux
+          </Text>
+        </Box>
+        <Box
+          zIndex={1}
+          position="relative"
+          m="auto"
+          w={{ base: "128px", md: "200px", lg: "250px" }}
+          h={{ base: "110px", md: "140px", lg: "140px" }}
+          className="ionic"
+          textAlign="center"
+          rounded="lg"
+          p={4}
+          bg={bg}
+          transition="all .5s ease-in-out"
+          _hover={{ transform: "scale(0.9)" }}
+        >
+          <Image
+            zIndex={1}
+            position="relative"
+            m={"auto"}
+            w={{ base: "55px", md: "90px", lg: "90px" }}
+            src="https://cdn.iconscout.com/icon/free/png-512/free-ionic-3521510-2945013.png?f=webp&w=512"
+          />
+          <Text
+            letterSpacing="widest"
+            bor
+            fontSize={{ base: "14px", md: "16px", lg: "17px" }}
+            mt={{ base: 1, md: 0, lg: 0 }}
+            
+            color={color}
+          >
+            Ionic
           </Text>
         </Box>
         <Box
@@ -316,7 +349,7 @@ function SkillsSection() {
           m="auto"
           w={{ base: "128px", md: "200px", lg: "250px" }}
           h={{ base: "110px", md: "140px", lg: "140px" }}
-          className="mongoose"
+          className="git"
           textAlign="center"
           rounded="lg"
           p={4}
@@ -329,7 +362,7 @@ function SkillsSection() {
             position="relative"
             m={"auto"}
             w={{ base: "55px", md: "90px", lg: "90px" }}
-            src="https://img.icons8.com/color/512/mongoose.png"
+            src="https://cdn.iconscout.com/icon/free/png-512/free-git-17-1175218.png?f=webp&w=512"
           />
           <Text
             zIndex={1}
@@ -340,10 +373,10 @@ function SkillsSection() {
             
             color={color}
           >
-            Mongoose
+           Git
           </Text>
         </Box>
-
+         
         <Box
           zIndex={1}
           position="relative"
@@ -377,6 +410,42 @@ function SkillsSection() {
             TypeScript
           </Text>
         </Box>
+
+        <Box
+          zIndex={1}
+          position="relative"
+          m="auto"
+          w={{ base: "128px", md: "200px", lg: "250px" }}
+          h={{ base: "110px", md: "140px", lg: "140px" }}
+          className="postman"
+          textAlign="center"
+          rounded="lg"
+          p={4}
+          bg={bg}
+          transition="all .5s ease-in-out"
+          _hover={{ transform: "scale(0.9)" }}
+        >
+          <Image
+            zIndex={1}
+            position="relative"
+            m={"auto"}
+            w={{ base: "55px", md: "90px", lg: "90px" }}
+            src="https://cdn.iconscout.com/icon/free/png-512/free-postman-3521648-2945092.png?f=webp&w=512"
+          />
+          <Text
+            zIndex={1}
+            position="relative"
+            letterSpacing="widest"
+            fontSize={{ base: "14px", md: "16px", lg: "17px" }}
+            mt={{ base: 1, md: 0, lg: 0 }}
+            
+            color={color}
+          >
+           Postman
+          </Text>
+        </Box>
+
+       
         <Box
           zIndex={1}
           position="relative"
@@ -449,7 +518,7 @@ function SkillsSection() {
           m="auto"
           w={{ base: "128px", md: "200px", lg: "250px" }}
           h={{ base: "110px", md: "140px", lg: "140px" }}
-          className="git"
+          className="github"
           textAlign="center"
           rounded="lg"
           p={4}

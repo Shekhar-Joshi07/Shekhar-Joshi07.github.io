@@ -12,12 +12,13 @@ import {
 import "./navbar.css"
 import { Link } from "react-scroll";
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
-import Logo from "../assets/PortfolioLOGO.png";
+import Logo from "../assets/myLOGO.png";
 import PDF from "../assets/Chandra-Shekhar-Joshi-Resume.pdf";
 
 const Links = [
   { title: "Home", id: "Home" },
   { title: "About", id: "About" },
+  { title: "Experience", id: "Experience" },
   { title: "Skills", id: "Skills" },
   { title: "Projects", id: "Projects" },
   { title: "Contact", id: "Contact" },
@@ -57,7 +58,7 @@ export default function Navbar() {
         bg={useColorModeValue("gray.100", "gray.900")}
         px={5}
         py={1}
-        bgColor="#22252c"
+        bgColor="#0C090A"
         color={"White"}
         fontWeight="600"
         pos={"sticky"}
@@ -99,12 +100,12 @@ export default function Navbar() {
               "space-between",
             ]}
           >
-            <Box>
+            <Box >
               <Image
                 mr={{ base: "19px" }}
                 src={Logo}
                 alt="logo"
-                width={{ base: "220px", md: "218px", lg: "225px" }}
+                width={{ base: "250px", md: "230px", lg: "250px" }}
               />
             </Box>
             <HStack

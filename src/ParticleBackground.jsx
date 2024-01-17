@@ -25,7 +25,7 @@ export default function ParticleBackground() {
             autoPlay: true,
             background: {
               color: {
-                value: "#22252c" 
+                value: "#0C090A" 
               },
               position: "50% 50%",
               repeat: "no-repeat",

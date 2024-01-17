@@ -1,5 +1,5 @@
 import { Box, Image, Text } from "@chakra-ui/react";
-import profile from "../assets/profile_image.jpg";
+import profile from "../assets/profileImageUpdated.png";
 
 const About = () => {
   return (
@@ -29,7 +29,7 @@ const About = () => {
           src={profile}
           border="4px solid #0bf0c1"
           borderRadius="100%"
-          w={{ base: "65%", md: "25%" }}
+          w={{ base: "65%", md: "20%" }}
           h={{ base: "20%", md: "10%" }}
           mr={{ base: 0, md: 4 }}
           mb={{ base: 4, md: 0 }}
@@ -45,12 +45,13 @@ const About = () => {
             fontSize="lg"
             mt={4}
           >
-            A passionate aspiring Full Stack Developer skilled in MERN stack.
+            A passionate Full Stack Developer skilled in MERN stack.
             Efficient in solving problems and developing websites using
             JavaScript, React, Node.js, Express.js, and MongoDB. Always eager to
             adapt and take on new challenges and learnings to leverage and hone
-            skills. Looking forward to an opportunity to deploy skills and be a
-            part of the success of an organization.
+            skills. Always ready for an better opportunity to deploy skills and be a
+            part of the success of an organization. Currently working full-time as a Full Stack Developer.
+
           </Text>
         </Box>
       </Box>
