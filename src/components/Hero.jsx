@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import PDF from "../assets/Chandra-Shekhar-Joshi-Resume.pdf";
+import PDF from "../assets/Chandra_Shekhar_Joshi_Resume.pdf";
 import animation from "../assets/soft_dev.json";
 import Lottie from "lottie-react";
 import { gsap } from "gsap";
@@ -61,7 +61,7 @@ const Hero = () => {
 
   const handleClick = () => {
     window.open(
-      "https://drive.google.com/file/d/1FWA-Z8HYEF-3y5rJrm-ai24JRgn0s-GK/view?usp=sharing",
+      "https://drive.google.com/file/d/11bc44-dTPRpJZqVvhJL8MR1LNXbJy6h8/view?usp=sharing",
       "_blank"
     );
   };
@@ -157,7 +157,7 @@ const Hero = () => {
           >
             <Link
               href={PDF}
-              download={"fp06_303_Chandra-Shekhar-Joshi-Resume"}
+              download={"Chandra_Shekhar_Joshi_Resume"}
             >
               <Button
                 onClick={handleClick}

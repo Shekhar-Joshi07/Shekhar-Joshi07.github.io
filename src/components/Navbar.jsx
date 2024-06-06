@@ -13,7 +13,7 @@ import "./navbar.css"
 import { Link } from "react-scroll";
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 import Logo from "../assets/myLOGO.png";
-import PDF from "../assets/Chandra-Shekhar-Joshi-Resume.pdf";
+import PDF from "../assets/Chandra_Shekhar_Joshi_Resume.pdf";
 
 const Links = [
   { title: "Home", id: "Home" },
@@ -45,7 +45,7 @@ export default function Navbar() {
 
   const handleClick = () => {
     window.open(
-      "https://drive.google.com/file/d/1FWA-Z8HYEF-3y5rJrm-ai24JRgn0s-GK/view?usp=sharing",
+      "https://drive.google.com/file/d/11bc44-dTPRpJZqVvhJL8MR1LNXbJy6h8/view?usp=sharing",
       "_blank"
     );
   };
@@ -140,7 +140,7 @@ export default function Navbar() {
                 ></span>
                 </Link>
               ))}
-              <a href={PDF} download={"fp06_303_Chandra-Shekhar-Joshi-Resume"}>
+              <a href={PDF} download={"Chandra_Shekhar_Joshi_Resume"}>
                 <Button onClick={handleClick} variant="outline" _hover={{color:"#22252c", backgroundColor:"#ffff"}}>
                   {" "}
                   Resume

@@ -49,7 +49,7 @@ const Experience = () => {
             mr={{ base: "0rem", md: "1rem", lg: "3rem" }}
           >
            <b> Full Stack Developer</b> <br />
-          <a href="https://onebigbit.com/" target="blank"> <b>One Big Bit Technologies Pvt.Ltd.</b></a>  <br />
+          <a href="https://onebigbit.com/" target="blank"> <b>One Big Bit Technologies 🔗</b></a>  <br />
            <i> 12 June 2024 - Present </i><br />
             Role: <b>software engineer</b> <br />
             Respnsibilites: <br />
@@ -97,7 +97,7 @@ const Experience = () => {
             mt={4}
           >
            <b>Full Stack Web Development</b>  <br />
-           <a href="https://masaischool.com/" target="blank"><b>Masai School</b></a>  <br />
+           <a href="https://masaischool.com/" target="blank"><b>Masai School 🔗</b></a>  <br />
             <i>16 April 2022 - June 2023</i><br />
              Masai School is an outcome-driven career school that serves as a military-style coding institute.<br />
              I embarked on a transformative journey in the realm of full-stack web development,<br />
