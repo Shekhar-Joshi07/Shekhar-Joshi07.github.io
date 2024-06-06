@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.990e0df0.css",
-    "main.js": "/static/js/main.f8842239.js",
+    "main.css": "/static/css/main.258d2d15.css",
+    "main.js": "/static/js/main.f037ed27.js",
     "static/media/GetInTouch Gif.gif": "/static/media/GetInTouch Gif.bc1e9f71cb4398e2f0e4.gif",
     "static/media/shopease.png": "/static/media/shopease.cc0ebcb37824c24eb36d.png",
     "static/media/medicine.png": "/static/media/medicine.e8f1beb459bc2e72902d.png",
@@ -11,16 +11,18 @@
     "static/media/FLopkart.png": "/static/media/FLopkart.8f01d68e37542710efb9.png",
     "static/media/takeatrip.png": "/static/media/takeatrip.4b93669b6fbe13751a50.png",
     "static/media/youtube.png": "/static/media/youtube.d98c4f2791c2e755f9ca.png",
-    "static/media/Chandra-Shekhar-Joshi-Resume.pdf": "/static/media/Chandra-Shekhar-Joshi-Resume.31815dddcf7b3946b440.pdf",
+    "static/media/gms.png": "/static/media/gms.ca9bd8b9c5aefe390cfc.png",
+    "static/media/pca.png": "/static/media/pca.ffba90e86c5019ecc87f.png",
+    "static/media/Chandra_Shekhar_Joshi_Resume.pdf": "/static/media/Chandra_Shekhar_Joshi_Resume.018213f388fbfefda433.pdf",
     "static/media/profileImageUpdated.png": "/static/media/profileImageUpdated.786382101bf3ef8cf8df.png",
     "static/media/obbLOGO.png": "/static/media/obbLOGO.6f5d0c73c5bb91e04ed0.png",
     "static/media/myLOGO.png": "/static/media/myLOGO.535d12fb3c65850d98a3.png",
     "index.html": "/index.html",
-    "main.990e0df0.css.map": "/static/css/main.990e0df0.css.map",
-    "main.f8842239.js.map": "/static/js/main.f8842239.js.map"
+    "main.258d2d15.css.map": "/static/css/main.258d2d15.css.map",
+    "main.f037ed27.js.map": "/static/js/main.f037ed27.js.map"
   },
   "entrypoints": [
-    "static/css/main.990e0df0.css",
-    "static/js/main.f8842239.js"
+    "static/css/main.258d2d15.css",
+    "static/js/main.f037ed27.js"
   ]
 }
