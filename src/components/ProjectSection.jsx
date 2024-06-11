@@ -97,7 +97,7 @@ const ProjectSection = () => {
               governance and management of these areas. Converted a PDF toolkit
               into an offline React app with advanced search functionality and
               delivered a website and desktop apps for Windows and macOS. <br />
-              <a style={{color:"yellow"}} hyeref="http://https://downloadpcatoolkit.onebigbit.com/">Download apps 🔗</a>
+              <a style={{color:"yellow"}} href="http://https://downloadpcatoolkit.onebigbit.com/" target="_blank">Download apps 🔗</a>
             </Text>
             <Heading
               color="#0bf0c1"

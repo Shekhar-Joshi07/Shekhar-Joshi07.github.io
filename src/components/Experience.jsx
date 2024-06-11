@@ -50,7 +50,7 @@ const Experience = () => {
           >
            <b> Full Stack Developer</b> <br />
           <a href="https://onebigbit.com/" target="blank"> <b>One Big Bit Technologies 🔗</b></a>  <br />
-           <i> 12 June 2024 - Present </i><br />
+           <i> 12 June 2023 - Present </i><br />
             Role: <b>software engineer</b> <br />
             Respnsibilites: <br />
             • Actively contribute as a Full Stack Developer in a
