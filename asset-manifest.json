@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.258d2d15.css",
-    "main.js": "/static/js/main.a2e5b7de.js",
+    "main.js": "/static/js/main.a935e8c4.js",
     "static/media/GetInTouch Gif.gif": "/static/media/GetInTouch Gif.bc1e9f71cb4398e2f0e4.gif",
     "static/media/shopease.png": "/static/media/shopease.cc0ebcb37824c24eb36d.png",
     "static/media/medicine.png": "/static/media/medicine.e8f1beb459bc2e72902d.png",
@@ -19,10 +19,10 @@
     "static/media/myLOGO.png": "/static/media/myLOGO.535d12fb3c65850d98a3.png",
     "index.html": "/index.html",
     "main.258d2d15.css.map": "/static/css/main.258d2d15.css.map",
-    "main.a2e5b7de.js.map": "/static/js/main.a2e5b7de.js.map"
+    "main.a935e8c4.js.map": "/static/js/main.a935e8c4.js.map"
   },
   "entrypoints": [
     "static/css/main.258d2d15.css",
-    "static/js/main.a2e5b7de.js"
+    "static/js/main.a935e8c4.js"
   ]
 }
