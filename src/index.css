@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: dark;
+    background-color: #05060b;
+  }
+
+  * {
+    scroll-behavior: smooth;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    background-color: theme('colors.midnight');
+    color: theme('colors.foam');
+    font-family: theme('fontFamily.sans');
+    margin: 0;
+    min-height: 100vh;
+    overflow-x: hidden;
+    letter-spacing: -0.01em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+  }
+
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    background-image: radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.08), transparent 55%),
+      radial-gradient(circle at 80% 0%, rgba(120, 250, 214, 0.12), transparent 60%),
+      var(--noise, url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22200%22 height=%22200%22 viewBox=%220 0 200 200%22%3E%3Crect width=%22200%22 height=%22200%22 fill=%22rgba(0,0,0,0)%22/%3E%3Cg fill=%22rgba(255,255,255,0.045)%22%3E%3Ccircle cx=%225%22 cy=%223%22 r=%221%22/%3E%3Ccircle cx=%2240%22 cy=%2212%22 r=%221%22/%3E%3Ccircle cx=%2288%22 cy=%2218%22 r=%221%22/%3E%3Ccircle cx=%22110%22 cy=%2290%22 r=%221.2%22/%3E%3Ccircle cx=%22160%22 cy=%2236%22 r=%221%22/%3E%3Ccircle cx=%22190%22 cy=%2270%22 r=%220.8%22/%3E%3Ccircle cx=%2270%22 cy=%22140%22 r=%220.9%22/%3E%3Ccircle cx=%2290%22 cy=%22175%22 r=%221%22/%3E%3Ccircle cx=%22160%22 cy=%22180%22 r=%220.6%22/%3E%3C/g%3E%3C/svg%3E'));
+    opacity: 0.6;
+    pointer-events: none;
+  }
+
+  #tsparticles {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    inset: 0;
+    z-index: 0;
+  }
+
+  ::selection {
+    background-color: rgba(248, 200, 216, 0.5);
+    color: #05060b;
+  }
+
+  ::-moz-selection {
+    background-color: rgba(248, 200, 216, 0.5);
+    color: #05060b;
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.04);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, rgba(248, 200, 216, 0.25), rgba(125, 211, 252, 0.3));
+    border-radius: 999px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, rgba(248, 200, 216, 0.45), rgba(125, 211, 252, 0.45));
+  }
+}
+
+@layer utilities {
+  .glass-panel {
+    background-color: rgba(8, 12, 24, 0.75);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 20px 50px rgba(5, 6, 11, 0.55);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    transform: translateZ(0);
+  }
+
+  .noise-overlay {
+    background-image: var(--noise, url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2240%22 height=%2240%22 viewBox=%220 0 40 40%22%3E%3Crect width=%2240%22 height=%2240%22 fill=%22rgba(0,0,0,0)%22/%3E%3Cg fill=%22rgba(255,255,255,0.045)%22%3E%3Ccircle cx=%223%22 cy=%223%22 r=%220.8%22/%3E%3Ccircle cx=%2215%22 cy=%229%22 r=%220.6%22/%3E%3Ccircle cx=%2226%22 cy=%222%22 r=%220.5%22/%3E%3Ccircle cx=%220%22 cy=%2218%22 r=%220.7%22/%3E%3Ccircle cx=%2219%22 cy=%2224%22 r=%220.9%22/%3E%3Ccircle cx=%2233%22 cy=%2217%22 r=%220.8%22/%3E%3Ccircle cx=%228%22 cy=%2232%22 r=%220.6%22/%3E%3Ccircle cx=%2231%22 cy=%2235%22 r=%220.5%22/%3E%3Ccircle cx=%221%22 cy=%2237%22 r=%220.7%22/%3E%3C/g%3E%3C/svg%3E'));
+  }
+
+  .card-surface {
+    background-color: rgba(6, 9, 18, 0.98);
+    background-image:
+      radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.05), transparent 55%),
+      linear-gradient(145deg, rgba(6, 9, 18, 0.98), rgba(4, 5, 9, 0.94));
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 10px 30px rgba(5, 6, 11, 0.4);
+    transform: translateZ(0);
+  }
+
+  .card-surface-alt {
+    background-color: rgba(4, 5, 9, 0.98);
+    background-image:
+      radial-gradient(circle at 15% 25%, rgba(125, 211, 252, 0.08), transparent 60%),
+      linear-gradient(160deg, rgba(4, 5, 9, 0.98), rgba(8, 11, 19, 0.9));
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    box-shadow: 0 10px 25px rgba(5, 6, 11, 0.35);
+    transform: translateZ(0);
+  }
+
+  .card-chip {
+    background: linear-gradient(140deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0));
+    border: 1px solid rgba(255, 255, 255, 0.08);
+  }
+}

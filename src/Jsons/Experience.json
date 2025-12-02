@@ -1,0 +1,18 @@
+[
+  {
+    "title": "Full Stack Developer",
+    "company": "One Big Bit Technologies Pvt. Ltd.",
+    "location": "Lucknow, India",
+    "period": "June 2023 - Present",
+    "description": "Leading full-stack development of enterprise applications for international clients across healthcare, marketplace, and conservation sectors.",
+    "achievements": [
+      "Developed comprehensive ERP systems for international clients (Doha, Qatar) with instant booking, inventory management system and financial reporting, achieving 60% faster booking times and 35% improved data accuracy",
+      "Developed GoKidney mobile application for AIIMS Delhi using Ionic framework for hemodialysis patients, tracking health metrics including vitals, exercise data, calories, and steps with Samsung wearable integration",
+      "Built cross-platform desktop applications using Electron.js and Tauri for Windows and macOS platforms with native OS integration",
+      "Created offline-first desktop application for IUCN Asia (Bangkok) with advanced search functionality across comprehensive databases",
+      "Optimized API performance using MongoDB aggregation pipelines and database queries resulting in 73% faster response times and enhanced system scalability",
+      "Built Workdone - dual-platform marketplace app for Australian client connecting service providers with customers, featuring user authentication, payment integration, review system, real-time chat system, animated UI components, and complete backend REST APIs and services - published on App Store and Play Store"
+    ],
+    "technologies": ["React.js", "Next.js", "Node.js", "Express.js", "MongoDB", "Ionic Framework", "Electron.js", "Tauri", "TypeScript", "REST API", "WebSocket", "AWS", "CI/CD"]
+  }
+]
