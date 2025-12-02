@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { motion, useReducedMotion } from 'framer-motion';
 import { Github, Linkedin, Mail, MapPin, Phone, Send, Sparkles } from 'lucide-react';
+import emailjs from '@emailjs/browser';
 import { motionDurations, motionEasing } from '../../theme/tokens';
 
 const channels = [
@@ -35,12 +36,53 @@ const socials = [
 const Contact = () => {
   const prefersReducedMotion = useReducedMotion();
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
-  const [status, setStatus] = useState<'idle' | 'sent'>('idle');
+  const [status, setStatus] = useState<'idle' | 'sent' | 'error'>('idle');
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    setStatus('sent');
-    setTimeout(() => setStatus('idle'), 2500);
+    if (!formData.name || !formData.email || !formData.message) return;
+    
+    setIsSubmitting(true);
+    setStatus('idle');
+
+    const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID
+    const adminTemplateId = import.meta.env.VITE_EMAILJS_ADMIN_TEMPLATE_ID
+    const userTemplateId = import.meta.env.VITE_EMAILJS_USER_TEMPLATE_ID
+    const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+
+    if (!serviceId || !adminTemplateId || !userTemplateId || !publicKey) {
+      console.error('EmailJS environment variables are missing');
+      setStatus('error');
+      setIsSubmitting(false);
+      return;
+    }
+
+    try {
+      // Send to Admin
+      await emailjs.send(serviceId, adminTemplateId, {
+        name: formData.name,
+        email: formData.email,
+        message: formData.message,
+      }, publicKey);
+
+      // Send to User
+      await emailjs.send(serviceId, userTemplateId, {
+        name: formData.name,
+        email: formData.email,
+        message: formData.message,
+      }, publicKey);
+
+      setStatus('sent');
+      setFormData({ name: '', email: '', message: '' });
+      setTimeout(() => setStatus('idle'), 5000);
+    } catch (error) {
+      console.error('Failed to send email:', error);
+      setStatus('error');
+      setTimeout(() => setStatus('idle'), 5000);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -160,7 +202,8 @@ const Contact = () => {
                 value={formData.name}
                 onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                 className="mt-2 w-full rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-sm text-foam placeholder:text-fog/50 focus:border-white/40 focus:outline-none"
-                placeholder="Who am I speaking with?"
+                // placeholder=""
+                required
               />
             </div>
             <div>
@@ -174,7 +217,8 @@ const Contact = () => {
                 value={formData.email}
                 onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                 className="mt-2 w-full rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-sm text-foam placeholder:text-fog/50 focus:border-white/40 focus:outline-none"
-                placeholder="you@company.com"
+                // placeholder=""
+                required
               />
             </div>
             <div>
@@ -188,17 +232,27 @@ const Contact = () => {
                 onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                 rows={5}
                 className="mt-2 w-full rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-sm text-foam placeholder:text-fog/50 focus:border-white/40 focus:outline-none"
-                placeholder="What are you building? Include timelines, problem statements, or links."
+                // placeholder="What are you building? Include timelines, problem statements, or links."
+                required
               />
             </div>
             <motion.button
               type="submit"
-              whileHover={prefersReducedMotion ? undefined : { y: -2 }}
-              whileTap={{ scale: 0.98 }}
-              className="inline-flex w-full items-center justify-center gap-2 rounded-2xl border border-white/10 bg-white/15 px-4 py-3 text-sm font-semibold text-foam transition hover:border-white/40"
+              disabled={isSubmitting}
+              whileHover={prefersReducedMotion || isSubmitting ? undefined : { y: -2 }}
+              whileTap={prefersReducedMotion || isSubmitting ? undefined : { scale: 0.98 }}
+              className={`inline-flex w-full items-center justify-center gap-2 rounded-2xl border border-white/10 bg-white/15 px-4 py-3 text-sm font-semibold text-foam transition hover:border-white/40 ${
+                isSubmitting ? 'opacity-50 cursor-not-allowed' : ''
+              }`}
             >
               <Send className="h-4 w-4" />
-              {status === 'sent' ? 'Message queued — thank you!' : 'Send message'}
+              {status === 'sent' 
+                ? 'Message queued — thank you!' 
+                : status === 'error' 
+                  ? 'Failed to send. Please try again.' 
+                  : isSubmitting 
+                    ? 'Sending...' 
+                    : 'Send message'}
             </motion.button>
           </motion.form>
         </div>
