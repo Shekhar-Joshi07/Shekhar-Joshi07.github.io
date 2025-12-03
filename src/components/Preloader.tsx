@@ -1,4 +1,5 @@
 import { memo, useEffect } from 'react';
+import { createPortal } from 'react-dom';
 import { motion, AnimatePresence, useReducedMotion } from 'framer-motion';
 import Logo from './Logo';
 
@@ -11,19 +12,36 @@ const Preloader = ({ isLoading }: PreloaderProps) => {
   
   useEffect(() => {
     if (isLoading) {
+      // Force scroll to top immediately
+      window.scrollTo(0, 0);
+      
+      // Prevent scrolling via event listeners
+      const preventDefault = (e: Event) => {
+        e.preventDefault();
+      };
+      
+      // Lock overflow
       document.body.style.overflow = 'hidden';
-      document.body.style.position = 'fixed';
-      document.body.style.width = '100%';
-    } else {
-      document.body.style.overflow = '';
-      document.body.style.position = '';
-      document.body.style.width = '';
+      document.body.style.height = '100vh';
+      document.documentElement.style.overflow = 'hidden';
+      document.documentElement.style.height = '100vh';
+      
+      // Prevent scroll events
+      window.addEventListener('wheel', preventDefault, { passive: false });
+      window.addEventListener('touchmove', preventDefault, { passive: false });
+      
+      return () => {
+        // Restore
+        document.body.style.overflow = '';
+        document.body.style.height = '';
+        document.documentElement.style.overflow = '';
+        document.documentElement.style.height = '';
+        
+        // Remove listeners
+        window.removeEventListener('wheel', preventDefault);
+        window.removeEventListener('touchmove', preventDefault);
+      };
     }
-    return () => {
-      document.body.style.overflow = '';
-      document.body.style.position = '';
-      document.body.style.width = '';
-    };
   }, [isLoading]);
 
   const exitAnimation = prefersReducedMotion
@@ -34,7 +52,7 @@ const Preloader = ({ isLoading }: PreloaderProps) => {
         filter: 'blur(5px)',
       };
 
-  return (
+  return createPortal(
     <AnimatePresence>
       {isLoading && (
         <motion.div
@@ -42,13 +60,33 @@ const Preloader = ({ isLoading }: PreloaderProps) => {
           initial={{ opacity: 1 }}
           exit={exitAnimation}
           transition={{ duration: 0.7, ease: [0.65, 0.05, 0.36, 1] }}
-          className="fixed inset-0 z-[9999] flex w-full items-center justify-center overflow-hidden bg-gradient-to-br from-midnight via-ink to-midnight touch-none select-none overscroll-none pb-40 md:pb-0"
+          className="bg-gradient-to-br from-midnight via-ink to-midnight touch-none select-none"
+          style={{ 
+            position: 'fixed',
+            top: 0,
+            left: 0,
+            right: 0,
+            bottom: 0,
+            width: '100vw',
+            height: '100dvh',
+            margin: 0,
+            padding: 0,
+            zIndex: 9999,
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            overflow: 'hidden',
+            overscrollBehavior: 'none',
+          }}
         >
           <span className="sr-only">Preparing experience…</span>
-          <Logo />
+          <div style={{ margin: 0, padding: 0 }}>
+            <Logo />
+          </div>
         </motion.div>
       )}
-    </AnimatePresence>
+    </AnimatePresence>,
+    document.body
   );
 };
 
